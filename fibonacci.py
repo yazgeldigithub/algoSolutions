@@ -1,6 +1,6 @@
 # fibonacci
 
-def fib(n):
+def fibonacci(n):
     result = []
     a = 1
     b = 1
@@ -12,4 +12,4 @@ def fib(n):
     return result
 
 
-print(fib(10))
+print(fibonacci(10))
