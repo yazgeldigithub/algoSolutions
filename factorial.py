@@ -10,7 +10,7 @@ def factorial(n):
         return n * factorial(n - 1)
 
 
-print(factorial(5))
+print(factorial(5))  # 120
 
 
 # Factorial using math.factorial
@@ -22,4 +22,4 @@ def factorial1(n):
         return math.factorial(n)
 
 
-print(factorial1(5))
+print(factorial1(5))  # 120

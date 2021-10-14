@@ -7,4 +7,4 @@ def palindrome(inputString):
         return False
 
 
-print(palindrome("abba"))
+print(palindrome("abba"))  # True

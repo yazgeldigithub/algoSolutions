@@ -12,4 +12,4 @@ def fibonacci(n):
     return result
 
 
-print(fibonacci(10))
+print(fibonacci(10))  # [1, 1, 2, 3, 5, 8]
