@@ -7,5 +7,9 @@ def alphaNumericRestriction(input_str):
         return False
 
 
-print(alphaNumericRestriction("5dfg4"))
+print(alphaNumericRestriction("5dfg4"))  # False
+print(alphaNumericRestriction("54"))  # True
+print(alphaNumericRestriction("dfg"))  # True
+
+
 

@@ -18,21 +18,24 @@
 # get the strictly increasing sequence [1, 3].
 
 
+
 def almostIncreasingSequence(sequence):
-    i = 0
-    while i < len(sequence) - 1:
-        if not sequence[i] < sequence[i + 1]:
-            if increasingSequence(sequence[:i] + sequence[i+1:]) or \
-                    increasingSequence(sequence[:i+1] + sequence[i+2:]):
-                return True
-            else:
+    dropped = False
+    last = prev = min(sequence) - 1
+    for elm in sequence:
+        if elm <= last:
+            if dropped:
                 return False
-        i += 1
+            else:
+                dropped = True
+            if elm <= prev:
+                prev = last
+            elif elm >= prev:
+                prev = last = elm
+        else:
+            prev, last = last, elm
     return True
 
 
-def increasingSequence(sequence):
-    for i in range(len(sequence) - 1):
-        if not sequence[i] < sequence[i + 1]:
-            return False
-    return True
+print(almostIncreasingSequence([1, 3, 2, 1]))  # False
+print(almostIncreasingSequence([1, 3, 2]))  # True
