@@ -23,3 +23,43 @@ def csMakeItJazzy(chords):
 
 
 print(csMakeItJazzy(["Dm", "G", "E", "A"]))  # ["Dm7", "G7", "E7", "A7"]
+
+
+def csMakeItJazzy(chords):
+    # put the result in a list
+    result = []
+
+    # loop through the chords
+    for chord in chords:
+        if chord.endswith("7"):
+            result += [chord]
+        else:
+            # append the chord with the number 7
+            result += [chord + "7"]
+
+    return result
+
+
+chords = ["G", "F", "C", "Dm", "G7"]
+print(csMakeItJazzy(chords))  # ['G7', 'F7', 'C7', 'Dm7', 'G7']
+
+
+def csMakeItJazzy(chords):
+
+    # put the result in a list
+    result = []
+
+    # loop through the chords
+    for chord in chords:
+        # slice the last index off the string
+        if chord[-1] == "7":
+            # result += [chord]
+            result.append(chord)
+        else:
+            # result += [chord + "7"]
+            result.append(chord + "7")
+    return result
+
+
+chords = ["G", "F", "C", "Dm", "G7"]
+print(csMakeItJazzy(chords))  # ['G7', 'F7', 'C7', 'Dm7', 'G7']

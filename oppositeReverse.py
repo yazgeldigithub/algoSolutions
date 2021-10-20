@@ -12,3 +12,19 @@ def oppositeReverse(txt):
 
 
 print(oppositeReverse("Hello World"))  # DLROw OLLEh
+
+
+# Solution 2
+def csOppositeReverse(txt):
+    word = ""
+    for letter in txt:
+        if letter != letter.upper():
+            word += letter.upper()
+        else:
+            word += letter.lower()
+    return word[:: -1]
+
+
+# txt = "Hello World"
+txt = "ReVeRsE"
+print(csOppositeReverse(txt))  # eSrEvEr
