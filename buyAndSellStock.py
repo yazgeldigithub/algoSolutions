@@ -1,6 +1,6 @@
-'''
-You are given the prices of a stock, in the form of an array of integers, prices. Let's say that prices[i] is the price of the stock on the ith day (0-based index). Assuming that you are allowed to buy and sell the stock only once, your task is to find the maximum possible profit (the difference between the buy and sell prices).
-'''
+"""You are given the prices of a stock, in the form of an array of integers, prices. Let's say that prices[i] is the
+price of the stock on the ith day (0-based index). Assuming that you are allowed to buy and sell the stock only once,
+your task is to find the maximum possible profit (the difference between the buy and sell prices). """
 '''
 EXAMPLE:
 Input: prices = [7,1,5,3,6,4]
