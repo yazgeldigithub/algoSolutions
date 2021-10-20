@@ -3,7 +3,6 @@
 # 417 in binary is 110100001.  Reversing the binary is 100001011, which is 267 in decimal
 
 def csReverseIntegerBits(n):
-
     # convert the integer to binary.  Remove the first two characters 0b
     binary = bin(n)[2:]
 
@@ -18,7 +17,5 @@ def csReverseIntegerBits(n):
     return result
 
 
-
-
-n = 417 # returns 267
+n = 417  # returns 267
 print(csReverseIntegerBits(n))
