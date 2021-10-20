@@ -20,7 +20,7 @@ def alphabetShift(inputString):
 
 
 inputString = "crazy"
-print(alphabetShift(inputString))
+print(alphabetShift(inputString))  # dsbaz
 
 '''
     Loop through the string.

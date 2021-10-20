@@ -39,7 +39,7 @@ def buyAndSellStock(prices):
 
 
 prices = [6, 3, 1, 2, 5, 4]
-print(buyAndSellStock(prices))
+print(buyAndSellStock(prices))  # 4
 
 
 # 2
@@ -52,7 +52,7 @@ def buyAndSellStock(prices):
 
 
 prices = [6, 3, 1, 2, 5, 4]
-print(buyAndSellStock(prices))
+print(buyAndSellStock(prices))  # 4
 
 
 # 3
@@ -70,4 +70,4 @@ def buyAndSellStock(prices):
 
 
 prices = [6, 3, 1, 2, 5, 4]
-print(buyAndSellStock(prices))
+print(buyAndSellStock(prices))  # 4
