@@ -10,7 +10,7 @@ class Solution:
             countT[t[i]] = 1 + countT.get(t[i], 0)
             
         for c in countS:
-            if countS[c] != countT.get(c, 0):
+            if countS[c] != countT.get(c, 0): # Check if counts are same
                 return False
             
         return True
