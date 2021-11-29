@@ -20,14 +20,14 @@
 Linear Data Structures
 An overview of the linear data structures to come.
 
-Linked Lists
+**Linked Lists**
 Linking together nodes using their next_node property creates a singly linked list. Singly linked lists are extremely versatile and useful, while also beautiful in their simplicity. Like nodes, these lists are used as foundations for future data structures and are an alternative to arrays when trying to store information in a linear way.
 
-Doubly Linked Lists
+**Doubly Linked Lists**
 While a singly linked list consists of nodes with links from one node to the next, a doubly linked list also has a link to the node before it. These prev_node links, along with the added tail_node property, allow you to iterate backward through the list as easily as you could iterate forward through the singly linked list.
 
-Queues
+**Queues**
 A queue is a linear collection of nodes that exclusively adds (enqueues) nodes to the tail, and removes (dequeues) nodes from the head of the queue. They can be implemented using different underlying data structures, but one of the more common methods is to use a singly linked list, which is what you will be using for your Queue class. Think of the queue data structure as an actual queue, or line, in a grocery store. The person at the front gets to leave the line first, and every person who joins the line has to join in the back.
 
-Stacks
+**Stacks**
 Stacks are another data structure with a perfectly descriptive name. Like a queue, a stack is a linear collection of nodes that adds (pushes) data to the head, or top, of the stack. However, unlike a queue, a stack removes data (pops) from the head of the stack. Think of it as a stack of books, where you can only pick up the top book, and add a new book to the top.
