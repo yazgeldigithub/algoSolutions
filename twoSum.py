@@ -22,13 +22,13 @@
 # Output: [0,1]
 
 def twoSum(nums, target):
-    d = {}
-    for i, n in enumerate(nums):
-        m = target - n
-        if m in d:
-            return [d[m], i]
-        else:
-            d[n] = i
+    hashMap = {}
 
+    for i, n in enumerate(nums):
+        diff = target - n
+        if diff in hashMap:
+            return [hashMap[diff], i]
+        else:
+            hashMap[n] = i
 
 print(twoSum([3, 2, 4], 6))

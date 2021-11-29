@@ -25,13 +25,13 @@ print(containsDuplicate([1, 2, 3, 4]))  # False
 
 
 def containsDuplicate1(nums):
-    counter = set()
-    for num in nums:
-        if num not in counter:
-            counter.add(num)
-        else:
+    hashSet = set()
+
+    for n in nums:
+        if n in hashSet:
             return True
-    return False
+        else:
+            hashSet.add(n)
 
 
 print(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]))  # True
