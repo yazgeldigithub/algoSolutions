@@ -22,3 +22,5 @@ searchable = [1, 2, 7, 8, 22, 28, 41, 58, 67, 71, 94]
 target1 = 1
 
 print(binarySearch(searchable, target1))
+
+# Time: O(log N)
