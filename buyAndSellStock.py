@@ -43,7 +43,7 @@ print(buyAndSellStock(prices))  # 4
 
 
 # 2
-def buyAndSellStock(prices):
+def buyAndSellStock2(prices):
     max_profit, min_price = 0, float("inf")
     for price in prices:
         min_price = min(price, min_price)
@@ -52,11 +52,11 @@ def buyAndSellStock(prices):
 
 
 prices = [6, 3, 1, 2, 5, 4]
-print(buyAndSellStock(prices))  # 4
+print(buyAndSellStock2(prices))  # 4
 
 
 # 3
-def buyAndSellStock(prices):
+def buyAndSellStock3(prices):
     if len(prices) == 0:
         return 0
     max_profit = 0
@@ -70,4 +70,24 @@ def buyAndSellStock(prices):
 
 
 prices = [6, 3, 1, 2, 5, 4]
-print(buyAndSellStock(prices))  # 4
+print(buyAndSellStock3(prices))  # 4
+
+
+# 4
+def buyAndSellStock4(prices):
+    l, r = 0, 1  #left = buy. right = sell
+    maxProfit = 0
+
+    while r < len(prices):
+        if prices[l] < prices[r]:
+            profit = prices[r] - prices[l]
+            maxProfit = max(maxProfit, profit)
+        else:
+            l = r
+        r += 1
+
+    return maxProfit
+
+
+prices = [6, 3, 1, 2, 5, 4]
+print(buyAndSellStock4(prices))
