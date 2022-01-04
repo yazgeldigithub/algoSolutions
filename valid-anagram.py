@@ -20,4 +20,4 @@ class Solution:
 # return Counter(s) == Counter(t)
 # return sorted(s) == sorted(t)
 # Time: O(s + t)
-# Space O(s + t)
+#  Space O(s + t)
